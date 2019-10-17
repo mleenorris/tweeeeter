@@ -4,7 +4,7 @@ class TweeeeetsController < ApplicationController
   # GET /tweeeeets
   # GET /tweeeeets.json
   def index
-    @tweeeeets = Tweeeeet.all
+    @tweeeeets = Tweeeeet.all.order("created_at DESC")
   end
 
   # GET /tweeeeets/1
